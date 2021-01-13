@@ -31,7 +31,7 @@ http {
 		listen <%= ENV["PORT"] %>;
 		server_name _;
 		keepalive_timeout 5;
-		client_max_body_size 20;
+		client_max_body_size 20M;
 
 		root /app/public; # path to your app
 	}
